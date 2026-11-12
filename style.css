@@ -1,0 +1,92 @@
+:root {
+  --bg: #C9CFE6;
+  --card: #FFFFFF;
+  --ink: #111114;
+  --muted: #5B5F70;
+  --accent: #FCE49B;
+  --line: #E4E6EF;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(20, 24, 60, .12);
+}
+
+header .name { font-size: 26px; font-weight: 700; letter-spacing: -.01em; }
+header .tag { color: var(--muted); font-size: 15px; }
+
+nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+
+nav a {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav a[aria-current="page"] { background: var(--accent); color: var(--ink); }
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 24px 22px;
+  margin-bottom: 16px;
+}
+
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+h2 { font-size: 20px; margin: 26px 0 8px; }
+.card > h2:first-child { margin-top: 0; }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 4px; }
+.muted { color: var(--muted); font-size: 15px; }
+
+a { color: #2F3A9E; }
+
+.mail {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+details { border-top: 1px solid var(--line); padding: 12px 0; }
+details:last-of-type { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 8px 0 0; }
+
+footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 24px; }
