@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Passgen — политика конфиденциальности</title>
-<meta name="description" content="Политика конфиденциальности Passgen: приложение не собирает и не передаёт данные.">
+<meta name="description" content="Политика конфиденциальности Passgen: приложение не собирает данные и не просматривает трафик.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +14,7 @@
     <img src="icon.png" alt="">
     <div>
       <div class="name">Passgen</div>
-      <div class="tag">Генератор паролей для iPhone</div>
+      <div class="tag">Прокси и пароли для iPhone</div>
     </div>
   </header>
 
@@ -25,11 +25,16 @@
 
   <article class="card">
     <h1>Политика конфиденциальности</h1>
-    <p class="muted">Последнее обновление: 13 ноября 2026 года</p>
-    <p>Passgen — генератор паролей для iPhone. Мы не собираем, не храним и не передаём ваши данные.</p>
+    <p class="muted">Последнее обновление: 24 ноября 2026 года</p>
+    <p>Passgen — прокси-клиент для подписок вашего провайдера и генератор паролей для iPhone. Мы не собираем и не храним ваши данные: у нас нет своих серверов, аналитики, рекламы и учётных записей.</p>
 
-    <h2>Какие данные обрабатываются</h2>
-    <p>Пароли, фразы и PIN-коды создаются прямо на вашем устройстве встроенным криптостойким генератором iOS. Приложение не подключается к интернету и не отправляет никаких запросов.</p>
+    <h2>Прокси</h2>
+    <p>Подписку вы получаете у своего провайдера и сами вставляете ссылку на неё. Passgen загружает список серверов с адреса, который вы указали. Вместе с этим запросом провайдер получает случайный идентификатор этой установки, модель iPhone и версию iOS. По ним провайдер считает устройства на подписке. Идентификатор создаётся при установке и ни с чем на устройстве не связан.</p>
+    <p>Подписки и список серверов хранятся только на вашем iPhone. Когда прокси включён, трафик идёт напрямую на выбранный вами сервер провайдера. Passgen не видит, не сохраняет и не передаёт ни трафик, ни посещённые сайты. Что делает с трафиком сам сервер, определяет политика конфиденциальности вашего провайдера.</p>
+    <p>Для диагностики приложение ведёт короткий журнал последнего подключения. Он хранится только на устройстве, и вы можете открыть и скопировать его сами.</p>
+
+    <h2>Пароли</h2>
+    <p>Пароли, фразы и PIN-коды создаются прямо на вашем устройстве встроенным криптостойким генератором iOS. Для этого интернет не нужен, пароли никуда не отправляются.</p>
     <p>Если включена история, скопированные пароли сохраняются в Связке ключей iOS только на этом устройстве. Они не попадают в iCloud и в резервные копии на других устройствах. Доступ к истории защищён Face ID или код-паролем устройства. Вы можете удалить любую запись или всю историю в любой момент.</p>
     <p>Пароль, который вы вводите на экране «Проверка», анализируется только в памяти приложения, не сохраняется и никуда не отправляется.</p>
     <p>Настройки генератора (длина, наборы символов и т. п.) хранятся на устройстве.</p>
@@ -38,6 +43,8 @@
     <ul>
       <li>Не собираем персональные данные и данные об использовании</li>
       <li>Не используем аналитику, рекламу и сторонние SDK</li>
+      <li>Не просматриваем и не сохраняем ваш трафик и посещённые сайты</li>
+      <li>Не продаём доступ к серверам</li>
       <li>Не создаём учётные записи</li>
       <li>Не передаём данные третьим лицам</li>
     </ul>
@@ -58,7 +65,7 @@
 
   <article class="card" lang="en">
     <h2>Summary in English</h2>
-    <p>Passgen does not collect, store on any server or share any data. Passwords, passphrases and PINs are generated on the device by the iOS cryptographically secure random generator. The app makes no network requests. Optional history is kept only in the iOS Keychain on this device (not synced to iCloud) and is protected by Face ID or the device passcode. Passwords entered in the checker are analysed in memory only and are never saved or sent. There is no analytics, advertising, third-party SDKs or accounts.</p>
+    <p>Passgen is a proxy client for subscriptions from the user's own provider and a password generator. We have no servers and collect no data. When the user adds a subscription, the app downloads it from the URL they entered and sends that provider a random per-install ID, the device model and the iOS version, which providers use for device limits. While the proxy is on, traffic goes directly to the server the user chose; Passgen does not see, log or share traffic or visited sites. Subscriptions and a short connection log stay on the device. Passwords, passphrases and PINs are generated on the device without the internet. Optional history is kept only in the iOS Keychain on this device (not synced to iCloud) and is protected by Face ID or the device passcode. Passwords entered in the checker are analysed in memory only and are never saved or sent. There is no analytics, advertising, third-party SDKs or accounts.</p>
     <p>Contact: <a href="https://github.com/aknurkanatbek3-bit/passgen-app/issues/new">open a support request</a>.</p>
   </article>
 
